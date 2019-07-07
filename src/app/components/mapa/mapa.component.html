@@ -1,5 +1,5 @@
 <mat-card>
-    <mat-card>Mapa</mat-card>
+    <mat-card>Map</mat-card>
 
     <mat-card-content>
       <agm-map (mapClick)="agregarMarcador($event)" [latitude]="lat" [longitude]="lng" [zoom]="15">
@@ -12,8 +12,8 @@
                   </p>
 
                   <div class="">
-                    <button (click)="editarMarcador(marcador)" type="button" mat-raised-button color="primary"  name="button">Editar</button>
-                    <button (click)="borrarMarcador(i)" type="button" mat-raised-button color="warn"  name="button">Borrar</button>
+                    <button (click)="editarMarcador(marcador)" type="button" mat-raised-button color="primary"  name="button">Edit</button>
+                    <button (click)="borrarMarcador(i)" type="button" mat-raised-button color="warn"  name="button">Delete</button>
                   </div>
 
             </agm-info-window>
